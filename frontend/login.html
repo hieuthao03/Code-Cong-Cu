@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login | E-Shopper</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">	
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href="#"><i class="fa fa-phone"></i> + 84 9388 6868</a></li>
+								<li><a href="https://mail.google.com/mail/"><i class="fa fa-envelope"></i> xedienpower@2024.com</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/?lang=vi"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://google.com"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="https://gmail.com"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 clearfix">
+						<div class="logo pull-left">
+							<a href="index.html"><img class="logo" src="images/logo.jpg" alt="" /></a>
+						</div>
+						<div class="btn-group pull-right clearfix">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									Việt Nam
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Canada</a></li>
+									<li><a href="">UK</a></li>
+								</ul>
+							</div>
+							
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									Thành phố
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Hà Nội</a></li>
+									<li><a href="">TP. Hồ Chí Minh</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 clearfix">
+						<div class="shop-menu clearfix pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html"><i class="fa fa-user"></i> Trang chủ</a></li>
+								<li><a href=""><i class="fa fa-star"></i> Cửa hàng</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Thủ tục thanh toán</a></li>
+								<li><a class="my_cart" href="cart.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+								<li><a href="login.html"><i class="fa fa-lock"></i> Đăng nhập</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html" class="active">Trang chủ</a></li>
+								<li class="dropdown"><a href="#">Cửa hàng<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html">Sản phẩm</a></li>
+										<li><a href="product-details.html">Thông tin chi tiết sản phẩm</a></li> 
+										<li><a href="checkout.html">Thủ tục thanh toán</a></li> 
+										<li><a href="cart.html">Giỏ hàng</a></li> 
+										<li><a href="login.html">Login</a></li> 
+                                    </ul>
+                                </li> 
+								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="blog-detail.html">Blog List</a></li>
+										<li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li> 
+								
+								<li><a href="contact-us.html">Liên hệ</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-sm-3">
+						<label class="tim_kiem" for="">Tìm kiếm </label>
+						<div class=" 	 pull-right">
+							<input type="text" placeholder="Search"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+	
+	<section id="form"><!--form-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1">
+					<div class="login-form"><!--login form-->
+						<h2>Đăng nhập</h2>
+						<form class="form_dangnhap" action="#">
+							<input class="input-field_dn_ten" type="text" placeholder="Tên tài khoản" />
+							<p type="text" class="err_dn_ten"></p>
+							<input class="input-field_dn_mail" type="email" placeholder="Email " />
+							<p type="text" class="err_dn_mail"></p>
+							<input class="input-field_dn_mk" type="password" placeholder="Mật khẩu"/>
+							<p type="text" class="err_dn_mk"></p>
+							<span>
+								<input type="checkbox" class="checkbox"> 
+								Lưu thông tin
+							</span>
+							<button type="submit" class="btn btn-default">Đăng nhập</button>
+						</form>
+					</div><!--/login form-->
+				</div>
+				<div class="col-sm-1">
+					<h2 class="or">Hoặc</h2>
+				</div>
+				<div class="col-sm-4">
+					<div class="signup-form"><!--sign up form-->
+						<h2>Đăng ký thành viên</h2>
+						<form class="form_dangky" action="#">
+							<input class="input-field_dky_ten" type="text" placeholder="Tên tài khoản"/>
+							<p type="text" class="err_dky_ten"></p>
+							<input class="input-field_dky_mail" type="email" placeholder="Email "/>
+							<p type="text" class="err_dky_mail"></p>
+							<input class="input-field_dky_mk" type="password" placeholder="Mật khẩu"/>
+							<p type="text" class="err_dky_mk"></p>
+							<input class="input-field_dky_mk2" type="password" placeholder="Nhập lại mật khẩu"/>
+							<p type="text" class="err_dky_mk"></p>
+							<a class="a_dieukhoan"href="dieukhoan.html">Điều khoản</a>
+							<button type="submit" class="btn btn-default">Đăng ký</button>
+						</form>
+					</div><!--/sign up form-->
+				</div>
+			</div>
+		</div>
+	</section><!--/form-->
+	
+	
+	<footer id="footer"><!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<h2><span>xe điện</span> POWER</h2>
+							<p>Xe điện POWER, dòng xe điện đầu tiên tại Việt Nam với rất nhiều chức năng cao cấp phù với với mọi khách hàng</p>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/bacxkground.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>TFT-POWER 299</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/img_product/product16.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>TFT-POWER 359</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/img_product/product19.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>TFT-POWER 395</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/product5.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>TFT-POWER 299</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="address">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245368.28264286026!2d107.91331347028394!3d16.071745991006676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c792252a13%3A0x1df0cb4b86727e06!2zxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1709459496635!5m2!1svi!2s" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Dịch vụ</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Trợ giúp online</a></li>
+								<li><a href="#">Kết nối với chúng tôi</a></li>
+								<li><a href="#">Đặt hàng</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Chi nhánh</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Hà Nội</a></li>
+								<li><a href="#">Đà Nẵng</a></li>
+								<li><a href="#">TP. Hồ Chí Minh</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Chính sách</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Ưu đãi</a></li>
+								<li><a href="#">Dành cho khách hàng</a></li>
+								<li><a href="#">Giấy tờ cấp phép</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Khác</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Thông tin công ty</a></li>
+								<li><a href="#">V.I.P</a></li>
+								<li><a href="#">Địa chỉ cụ thể</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>Đánh Giá</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Nhập email của bạn" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Gửi email cho chúng tôi để nhận form đánh giá nhanh nhất<br /></p>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Created in 2024 by admin xedien.power@.gmail.com</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Thanh Nam Dev Newbie</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+	
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			// Xử lý đăng ký
+			$('.form_dangky').submit(function(e) {
+				e.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+				// Lấy giá trị từ các input
+				var tenDangKy = $('.input-field_dky_ten').val().trim();
+				var email = $('.input-field_dky_mail').val().trim();
+				var matKhau = $('.input-field_dky_mk').val();
+				var matKhau2 = $('.input-field_dky_mk2').val();
+
+				// Kiểm tra dữ liệu hợp lệ
+				if (tenDangKy === '' || email === '' || matKhau === '' || matKhau2 === '') {
+					alert('Vui lòng nhập đầy đủ thông tin đăng ký');
+					return;
+				}
+
+				if (matKhau !== matKhau2) {
+					alert('Mật khẩu nhập lại không khớp');
+					return;
+				}
+
+				// Lưu thông tin vào localStorage
+				var user = {
+					tenDangKy: tenDangKy,
+					email: email,
+					matKhau: matKhau
+				};
+
+				localStorage.setItem('user', JSON.stringify(user));
+
+				console.log('Đăng ký thành công');
+				alert('Đăng ký thành công!');
+				
+				// Xóa giá trị các input sau khi đăng ký thành công
+				$('.input-field_dky_ten').val('');
+				$('.input-field_dky_mail').val('');
+				$('.input-field_dky_mk').val('');
+				$('.input-field_dky_mk2').val('');
+			});
+
+			// Xử lý đăng nhập
+			$('.form_dangnhap').submit(function(e) {
+				e.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+				// Lấy giá trị từ các input
+				var tenDangNhap = $('.input-field_dn_ten').val().trim();
+				var matKhau = $('.input-field_dn_mk').val();
+
+				// Kiểm tra dữ liệu hợp lệ
+				if (tenDangNhap === '' || matKhau === '') {
+					alert('Vui lòng nhập đầy đủ thông tin đăng nhập');
+					return;
+				}
+
+				// Lấy thông tin từ localStorage
+				var storedUser = localStorage.getItem('user');
+				if (!storedUser) {
+					alert('Tài khoản chưa đăng ký');
+					return;
+				}
+
+				var user = JSON.parse(storedUser);
+
+				// Kiểm tra đăng nhập
+				if (tenDangNhap === user.tenDangKy && matKhau === user.matKhau) {
+					console.log('Đăng nhập thành công');
+					alert('Đăng nhập thành công!');
+					// Chuyển hướng tới trang index (hoặc trang khác)
+					window.location.href = 'index.html';
+				} else {
+					alert('Tên tài khoản hoặc mật khẩu không chính xác');
+				}
+			});
+
+			});
+
+
+
+	</script>
+</body>
+</html>

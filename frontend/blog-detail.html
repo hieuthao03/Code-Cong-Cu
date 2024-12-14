@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cart | E-Shopper</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<style type="text/css">
+		.img_them{
+			width: 110px;
+		}
+		.name{
+			color: black;
+			
+		}
+		.cart_quantity_up{
+			background: #F0F0E9;
+			color: #696763;
+			display: inline-block;
+			font-size: 16px;
+			height: 28px;
+			overflow: hidden;
+			text-align: center;
+			width: 35px;
+			float: left;
+			line-height: 28px;
+		}
+		.cart_quantity_down{
+			background: #F0F0E9;
+			color: #696763;
+			display: inline-block;
+			font-size: 16px;
+			height: 28px;
+			overflow: hidden;
+			text-align: center;
+			width: 35px;
+			float: left;
+			line-height: 28px;
+		}
+
+	</style>
+</head><!--/head-->
+
+<body>
+	
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href="#"><i class="fa fa-phone"></i> + 84 9388 6868</a></li>
+								<li><a href="https://mail.google.com/mail/"><i class="fa fa-envelope"></i> xedienpower@2024.com</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/?lang=vi"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://google.com"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="https://gmail.com"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 clearfix">
+						<div class="logo pull-left">
+							<a href="index.html"><img class="logo" src="images/logo.jpg" alt="" /></a>
+						</div>
+						<div class="btn-group pull-right clearfix">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									Việt Nam
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Canada</a></li>
+									<li><a href="">UK</a></li>
+								</ul>
+							</div>
+							
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+									Thành phố
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">Hà Nội</a></li>
+									<li><a href="">TP. Hồ Chí Minh</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 clearfix">
+						<div class="shop-menu clearfix pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html"><i class="fa fa-user"></i> Trang chủ</a></li>
+								<li><a href=""><i class="fa fa-star"></i> Cửa hàng</a></li>
+								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Thủ tục thanh toán</a></li>
+								<li><a class="my_cart" href="cart.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+								<li><a href="login.html"><i class="fa fa-lock"></i> Đăng nhập</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html" class="active">Trang chủ</a></li>
+								<li class="dropdown"><a href="#">Cửa hàng<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="shop.html">Sản phẩm</a></li>
+										<li><a href="product-details.html">Thông tin chi tiết sản phẩm</a></li> 
+										<li><a href="checkout.html">Thủ tục thanh toán</a></li> 
+										<li><a href="cart.html">Giỏ hàng</a></li> 
+										<li><a href="login.html">Login</a></li> 
+                                    </ul>
+                                </li> 
+								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="blog-detail.html">Blog List</a></li>
+										<li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li> 
+								
+								<li><a href="contact-us.html">Liên hệ</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-sm-3">
+						<label class="tim_kiem" for="">Tìm kiếm </label>
+						<div class=" 	 pull-right">
+							<input type="text" placeholder="Search"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header-bottom-->
+	</header><!--/header-->
+
+	
+	<section>
+		<div class="container">
+			<div class="row">
+					<div class="col-sm-3">
+						<div class="left-sidebar">
+							<h2>Danh mục</h2>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											PHÂN KHÚC THƯƠNG GIA
+										</a>
+									</h4>
+								</div>
+								<div id="sportswear" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">XE ĐIỆN PW-21 </a></li>
+											<li><a href="#">XE ĐIỆN PW-22 </a></li>
+											<li><a href="#">XE ĐIỆN PW-23 </a></li>
+											<li><a href="#">XE ĐIỆN PW-24</a></li>
+											<li><a href="#">XE ĐIỆN PW-25 </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#mens">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											PHÂN KHÚC CAO CẤP
+										</a>
+									</h4>
+								</div>
+								<div id="mens" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">XE ĐIỆN C-PW-2Fendi</a></li>
+											<li><a href="#">XE ĐIỆN C-PW-2Guess</a></li>
+											<li><a href="#">XE ĐIỆN C-PW-2Valentino</a></li>
+											<li><a href="#">XE ĐIỆN C-PW-2Dior</a></li>
+											<li><a href="#">XE ĐIỆN C-PW-2Vrsce</a></li>
+											<li><a href="#">XE ĐIỆN C-PW-2Armani</a></li>
+											<li><a href="#">XE ĐIỆN C-PW-2Prada</a></li>
+											<li><a href="#">XE ĐIỆN C-PW-2Dolce </a></li>
+											<li><a href="#">XE ĐIỆN C-PW-2Chanel</a></li>
+											<li><a href="#">XE ĐIỆN C-PW-2Gui</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>	
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordian" href="#womens">
+											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+											PHÂN KHÚC TẦM TRUNG
+										</a>
+									</h4>
+								</div>
+								<div id="womens" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#">XE ĐIỆN T-PW-989 Fendi</a></li>
+											<li><a href="#">XE ĐIỆN T-PW-989 Guess</a></li>
+											<li><a href="#">XE ĐIỆN T-PW-989 Vale</a></li>
+											<li><a href="#">XE ĐIỆN T-PW-989 Di</a></li>
+											<li><a href="#">XE ĐIỆN T-PW-989 Verse</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">XE ĐIỆN MINI</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">XE ĐIỆN DÀNH CHO TRẺ EM</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">XE ĐIỆN PW-266</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">PHỤ KIỆN XE ĐIỆN</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">LINH KIỆN</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">DECOR XE ĐIỆN</a></h4>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">KHÁC</a></h4>
+								</div>
+							</div>
+						</div>
+					
+						<div class="brands_products"><!--brands_products-->
+							<h2>THƯƠNG HIỆU</h2>
+							<div class="brands-name">
+								<ul class="nav nav-pills nav-stacked">
+									<li><a href="#"> <span class="pull-right">5</span>PW</a></li>
+									<li><a href="#"> <span class="pull-right">8</span>C-PW</a></li>
+									<li><a href="#"> <span class="pull-right">27</span>T-PW</a></li>
+									<li><a href="#"> <span class="pull-right">22</span>DF-PW</a></li>
+									<li><a href="#"> <span class="pull-right">5</span>OP-PW</a></li>
+									<li><a href="#"> <span class="pull-right">9</span>SCS-T-PW</a></li>
+									<li><a href="#"> <span class="pull-right">50</span>Khác</a></li>
+								</ul>
+							</div>
+						</div><!--/brands_products-->
+						
+						<div class="price-range"><!--price-range-->
+							<h2>TẦM GIÁ</h2>
+							<div class="well text-center">
+								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
+								 <b class="pull-left">$ 0</b> <b class="pull-right">$ 600</b>
+							</div>
+						</div><!--/price-range-->
+						
+						<div class="shipping text-center"><!--shipping-->
+							<img class="poster" src="images/poster.jpg" alt="" />
+						</div><!--/shipping-->
+					
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<div class="blog-post-area">
+						<h2 class="title text-center">Đánh Giá</h2>
+						<div class="single-blog-post">
+							<h3>ĐÁNH GIÁ CỦA KHÁCH HÀNG</h3>
+							<div class="post-meta">
+								<ul>
+									<li><i class="fa fa-user"></i> Mac Doe</li>
+									<li><i class="fa fa-clock-o"></i> 1:33 pm</li>
+									<li><i class="fa fa-calendar"></i> DEC 5, 2024</li>
+								</ul>
+								<span>
+									<i class="fa fa-star" ></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+								</span>
+							</div>
+							<a href="">
+								<img src="images/product2.png" alt="">
+							</a>
+							<p>
+								Hỗ trợ 1-1 & setup khách hàng cho người bán mới
+								Đối tượng tham gia chương trình Nhà Bán Hàng Chiến Lược Xe Điện Power
+								
+							<p>
+								Nhận thêm freeship, giảm giá và flash sale		
+								Tham gia cộng đồng người bán để học hỏi từ những người mua hàng
+									
+							<p>
+										
+							<p>
+							Nhà bán hàng chiến lược Xe Điện Power là người bán hàng mới hoặc hiện tại đang bán hàng trên Xe Điện Power thỏa mãn các điều kiện sau đây:
+											
+							</p>
+							<div class="pager-area">
+								<ul class="pager pull-right">
+									<li><a href="#">Truớc</a></li>
+									<li><a href="#">Sau</a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!--/blog-post-area-->
+
+					<div class="rating-area">
+						<ul class="ratings">
+							<li class="rate-this">Đánh giá sản phẩm:</li>
+							<li>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+							<li class="color">(6 đánh giá)</li>
+						</ul>
+						<ul class="tag">
+							<li>TAG:</li>
+							<li><a class="color" href="">TFT-POWER 299 <span>/</span></a></li>
+							<li><a class="color" href="">T-TFT-POWER 898 <span>/</span></a></li>
+							<li><a class="color" href="">TFT-POWER 369</a></li>
+						</ul>
+					</div><!--/rating-area-->
+
+					<div class="socials-share">
+						<a href=""><img src="images/blog/socials.png" alt=""></a>
+					</div><!--/socials-share-->
+
+					<div class="media commnets">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="images/blog/man-one.jpg" alt="">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Tuấn Trần</h4>
+							<p>Sản phẩm đẹp, giao hàng rất nhanh và chuyên nghiệp. Rất hài lòng về thái độ phục vụ.
+								Sản phẩm đúng như trên web. Rất ấn tượng.</p>
+							<div class="blog-socials">
+								<ul>
+									<li><a href=""><i class="fa fa-facebook"></i></a></li>
+									<li><a href=""><i class="fa fa-twitter"></i></a></li>
+									<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+								<a class="btn btn-primary" href="">Đánh giá khác</a>
+							</div>
+						</div>
+					</div> 
+					<div class="response-area">
+						<h2>3 TRẢ LỜI</h2>
+						<ul class="media-list">
+							<li class="media">
+								
+								<a class="pull-left" href="#">
+									<img class="media-object" src="images/blog/man-two.jpg" alt="">
+								</a>
+								<div class="media-body">
+									<ul class="sinlge-post-meta">
+										<li><i class="fa fa-user"></i>songtu244</li>
+										<li><i class="fa fa-clock-o"></i> 1:33 pm</li>
+										<li><i class="fa fa-calendar"></i> DEC 5, 2024</li>
+									</ul>
+									<p>Nhân viên đông, phục vụ tốt 
+										Xe thì mình ko bàn đến vì mình ko biết đánh giá tnao
+										Nói chung mn nên thủe mua qua shopee , vừa tiện vừa đc giá rẻ dịp sale
+										0:04
+										</p>
+									<a class="btn btn-primary" href=""><i class="fa fa-reply"></i>Trả lời</a>
+								</div>
+							</li>
+							<li class="media second-media">
+								<a class="pull-left" href="#">
+									<img class="media-object" src="images/blog/man-three.jpg" alt="">
+								</a>
+								<div class="media-body">
+									<ul class="sinlge-post-meta">
+										<li><i class="fa fa-user"></i>thuytran1102r</li>
+										<li><i class="fa fa-clock-o"></i> 1:33 pm</li>
+										<li><i class="fa fa-calendar"></i> DEC 5, 2024</li>
+									</ul>
+									<p>Chất lượng sản phẩm tuyệt vời. Shopee giải quyết nhanh trong vđ không có hàng đã chuyển sang cửa hàng khác cho khách. Hài lòng! Các bạn yên tâm mua nhé!</p>
+									<a class="btn btn-primary" href=""><i class="fa fa-reply"></i>Trả lời</a>
+								</div>
+							</li>
+							<li class="media second-media">
+								<a class="pull-left" href="#">
+									<img class="media-object" src="images/blog/man-three.jpg" alt="">
+								</a>
+								<div class="media-body">
+									<ul class="sinlge-post-meta">
+										<li><i class="fa fa-user"></i>
+											litequang </li>
+										<li><i class="fa fa-clock-o"></i> 1:33 pm</li>
+										<li><i class="fa fa-calendar"></i> DEC 5, 2024</li>
+									</ul>
+									<p>Cảm ơn shop đã hỗ trợ, trả góp ok, dù chênh hơn 1 chút so với mua trực tiếp tại cửa hàng.</p>
+									<a class="btn btn-primary" href=""><i class="fa fa-reply"></i>Trả lời</a>
+								</div>
+							</li>
+
+							<li class="media">
+								<a class="pull-left" href="#">
+									<img class="media-object" src="images/blog/man-four.jpg" alt="">
+								</a>
+								<div class="media-body">
+									<ul class="sinlge-post-meta">
+										<li><i class="fa fa-user"></i>Janis Gallagher</li>
+										<li><i class="fa fa-clock-o"></i> 1:33 pm</li>
+										<li><i class="fa fa-calendar"></i> DEC 5, 2024</li>
+									</ul>
+									<p>Cảm ơn shop đã hỗ trợ, trả góp ok, dù chênh hơn 1 chút so với mua trực tiếp tại cửa hàng. Chất lượng sản phẩm tuyệt vời. Shopee giải quyết nhanh trong vđ không có hàng đã chuyển sang cửa hàng khác cho khách. Hài lòng! Các bạn yên tâm mua nhé!</p>
+									<a class="btn btn-primary" href=""><i class="fa fa-reply"></i>Trả lời</a>
+								</div>
+							</li>
+							
+						</ul>					
+					</div>
+					<div class="replay-box">
+						<div class="row">
+							<div class="col-sm-12">
+								<h2>Để lại đánh giá</h2>
+								
+								<div class="text-area">
+									<div class="blank-arrow">
+										<label>Viết đánh giá của bạn ở đây</label>
+									</div>
+									<span>*</span>
+									<textarea name="message" rows="11"></textarea>
+									<a class="btn btn-primary" href="">Đánh giá</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+	
+	<footer id="footer"><!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="companyinfo">
+							<h2><span>xe điện</span> POWER</h2>
+							<p>Xe điện POWER, dòng xe điện đầu tiên tại Việt Nam với rất nhiều chức năng cao cấp phù với với mọi khách hàng</p>
+						</div>
+					</div>
+					<div class="col-sm-7">
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/bacxkground.png" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>TFT-POWER 299</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/img_product/product16.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>TFT-POWER 359</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/img_product/product19.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>TFT-POWER 395</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+						
+						<div class="col-sm-3">
+							<div class="video-gallery text-center">
+								<a href="#">
+									<div class="iframe-img">
+										<img src="images/product5.jpg" alt="" />
+									</div>
+									<div class="overlay-icon">
+										<i class="fa fa-play-circle-o"></i>
+									</div>
+								</a>
+								<p>TFT-POWER 299</p>
+								<h2>24 DEC 2014</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="address">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245368.28264286026!2d107.91331347028394!3d16.071745991006676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c792252a13%3A0x1df0cb4b86727e06!2zxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1709459496635!5m2!1svi!2s" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Dịch vụ</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Trợ giúp online</a></li>
+								<li><a href="#">Kết nối với chúng tôi</a></li>
+								<li><a href="#">Đặt hàng</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Chi nhánh</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Hà Nội</a></li>
+								<li><a href="#">Đà Nẵng</a></li>
+								<li><a href="#">TP. Hồ Chí Minh</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Chính sách</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Ưu đãi</a></li>
+								<li><a href="#">Dành cho khách hàng</a></li>
+								<li><a href="#">Giấy tờ cấp phép</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Khác</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="#">Thông tin công ty</a></li>
+								<li><a href="#">V.I.P</a></li>
+								<li><a href="#">Địa chỉ cụ thể</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3 col-sm-offset-1">
+						<div class="single-widget">
+							<h2>Đánh Giá</h2>
+							<form action="#" class="searchform">
+								<input type="text" placeholder="Nhập email của bạn" />
+								<button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+								<p>Gửi email cho chúng tôi để nhận form đánh giá nhanh nhất<br /></p>
+							</form>	
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Created in 2024 by admin xedien.power@.gmail.com</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="https://www.facebook.com/ylswan19">Thanh Nam Dev Newbie</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+	
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
